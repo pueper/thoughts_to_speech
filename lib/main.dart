@@ -19,9 +19,18 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
         ),
-        body: const Center(
-          child: Text('Hello there'),
-        ),
+        body: Column(
+          children: [
+            Flexible(child: Container()),
+            Container(
+                child: Text("Hello world")
+            ),
+            Flexible(child: Container()),
+            Center(
+              child: Image.asset('C:/coding/thoughts_to_speech/assets/images/HelloThere.jpg'),
+            )
+          ],
+        )
       ),
     );
   }
