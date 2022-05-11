@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
             ),
             Flexible(child: Container()),
             Center(
-              child: Image.asset('C:/coding/thoughts_to_speech/assets/images/HelloThere.jpg'),
+              child: Image.asset('assets/images/HelloThere.jpg'),
             )
           ],
         )
