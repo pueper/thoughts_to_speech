@@ -3,35 +3,25 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'home.dart';
+import 'temp.dart';
+
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
-        ),
-        body: Column(
-          children: [
-            Flexible(child: Container()),
-            Container(
-                child: Text("Hello world")
-            ),
-            Flexible(child: Container()),
-            Center(
-              child: Image.asset('assets/images/HelloThere.jpg'),
-            )
-          ],
-        )
-      ),
+      title: 'Thoughts to speech app',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/temp': (context) => const temp()
+      },
     );
   }
 }
+
