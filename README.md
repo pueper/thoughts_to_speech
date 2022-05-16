@@ -2,6 +2,9 @@
 
 Project for Aphasia app
 
+Quick tip for if u are getting the WARNING: Another emulator is still running. 
+open task manager and scroll down until u see "qemu-system-x86_64.exe" and TERMINATE that program
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
