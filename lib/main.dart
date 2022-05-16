@@ -4,6 +4,11 @@
 
 import 'package:flutter/material.dart';
 import 'home.dart';
+import 'objects.dart';
+import 'newupload.dart';
+import 'favorites.dart';
+import 'ownuploads.dart';
+import 'phrases.dart';
 import 'temp.dart';
 
 
@@ -19,7 +24,12 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),
-        '/temp': (context) => const temp()
+        '/objects': (context) => const Objects(),
+        '/temp': (context) => const Temp(),
+        '/newupload': (context) => const NewUpload(),
+        '/favorites': (context) => const Favorites(),
+        '/ownuploads': (context) => const OwnUploads(),
+        '/phrases': (context) => const Phrases()
       },
     );
   }
