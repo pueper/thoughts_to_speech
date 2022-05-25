@@ -47,11 +47,22 @@ class HomeScreen extends StatelessWidget {
               )
             ],
           ),
-          Container(
-            child: ElevatedButton(
-              onPressed: () {Navigator.pushNamed(context, '/newupload');},
-              child: const Text("New Upload"),
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                child: ElevatedButton(
+                  onPressed: () {Navigator.pushNamed(context, '/newupload');},
+                  child: const Text("New Upload"),
+                ),
+              ),
+              Container(
+                child: ElevatedButton(
+                  onPressed: ( ) {Navigator.pushNamed(context, '/personalinfo');},
+                  child: const Text("Personal information")
+                )
+              )
+            ],
           )
         ],
       )
