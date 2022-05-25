@@ -46,6 +46,28 @@ class HomeScreen extends StatelessWidget {
                 ),
               )
             ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                child: ElevatedButton(
+                  onPressed: () {Navigator.pushNamed(context, '/newupload');},
+                  child: const Text("New Upload"),
+                ),
+              ),
+              Container(
+                child: ElevatedButton(
+                  onPressed: ( ) {Navigator.pushNamed(context, '/personalinfo');},
+                  child: const Icon(
+                    Icons.assignment_ind,
+                    color: Colors.red,
+                    size: 40
+                  )
+                  // child: const Text("Personal information")
+                )
+              )
+            ],
           )
         ],
       )
