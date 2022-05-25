@@ -18,14 +18,14 @@ class HomeScreen extends StatelessWidget {
             children: [
               Container(
                 child: ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, '/temp');},
-                  child: const Text("button 1"),
+                  onPressed: () {Navigator.pushNamed(context, '/objects');},
+                  child: const Text("Objects"),
                 ),
               ),
               Container(
                 child: ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, '/temp');},
-                  child: const Text("button 2"),
+                  onPressed: () {Navigator.pushNamed(context, '/phrases');},
+                  child: const Text("Phrases"),
                 ),
               )
             ],
@@ -35,14 +35,14 @@ class HomeScreen extends StatelessWidget {
             children: [
               Container(
                 child: ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, '/temp');},
-                  child: const Text("button 3"),
+                  onPressed: () {Navigator.pushNamed(context, '/favorites');},
+                  child: const Text("Favorites"),
                 ),
               ),
               Container(
                 child: ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, '/temp');},
-                  child: const Text("button 4"),
+                  onPressed: () {Navigator.pushNamed(context, '/ownuploads');},
+                  child: const Text("Own Uploads"),
                 ),
               )
             ],
@@ -59,12 +59,7 @@ class HomeScreen extends StatelessWidget {
               Container(
                 child: ElevatedButton(
                   onPressed: ( ) {Navigator.pushNamed(context, '/personalinfo');},
-                  child: const Icon(
-                    Icons.assignment_ind,
-                    color: Colors.red,
-                    size: 40
-                  )
-                  // child: const Text("Personal information")
+                  child: const Text("Personal information")
                 )
               )
             ],

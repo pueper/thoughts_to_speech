@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Temp extends StatelessWidget {
-  const Temp({Key? key}) : super(key: key);
+class OwnUploads extends StatelessWidget {
+  const OwnUploads({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('temp'),
+        title: const Text('Own Uploads'),
       ),
       body: Center(
         child: ElevatedButton(
