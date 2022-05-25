@@ -59,7 +59,8 @@ class HomeScreen extends StatelessWidget {
               Container(
                 child: ElevatedButton(
                   onPressed: ( ) {Navigator.pushNamed(context, '/personalinfo');},
-                  child: const Text("Personal information")
+                  child: const Icon(Icons.assignment_ind, color: Colors.black, size: 50),
+                  //child: const Text("Personal information")
                 )
               )
             ],
