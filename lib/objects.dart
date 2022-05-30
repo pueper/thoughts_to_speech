@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:full_screen_image/full_screen_image.dart';
+
 
 class Objects extends StatelessWidget {
   const Objects({Key? key}) : super(key: key);
@@ -8,15 +10,134 @@ class Objects extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Objects'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Go back!'),
+      ), 
+        body: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              // Row(
+              //   children: [
+              //     ElevatedButton(onPressed: Navigator.pop(context), child: const Text('Go back!'))
+              //   ],
+              //     child: ElevatedButton(
+              //       onPressed: () {
+              //         Navigator.pop(context);
+              //       },
+              //       child: const Text('Go back!'),
+              //     ),
+              // ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  //FullScreenWidget()
+                  Image.asset('assets/images/HelloThere.jpg',
+                    height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',
+                    height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',
+                    height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset('assets/images/HelloThere.jpg',
+                    height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',
+                    height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',
+                    height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                ],
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                  Image.asset('assets/images/HelloThere.jpg',height: 130,
+                    width: 130,
+                    fit: BoxFit.fitWidth,),
+                ],
+
+              )
+            ],
+            
+          ),
         ),
-      ),
     );
   }
 }
