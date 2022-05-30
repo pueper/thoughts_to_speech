@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:full_screen_image/full_screen_image.dart';
+import 'package:full_screen_image_null_safe/full_screen_image_null_safe.dart';
 
 
 class Objects extends StatelessWidget {
@@ -31,10 +31,14 @@ class Objects extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   //FullScreenWidget()
-                  Image.asset('assets/images/HelloThere.jpg',
-                    height: 130,
-                    width: 130,
-                    fit: BoxFit.fitWidth,),
+                  FullScreenWidget(
+                    child: Container(
+                      child: Image.asset('assets/images/HelloThere.jpg',
+                        height: 130,
+                        width: 130,
+                        fit: BoxFit.fitWidth,),
+                    ),
+                  ),
                   Image.asset('assets/images/HelloThere.jpg',
                     height: 130,
                     width: 130,
