@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:thoughts_to_speech/personalinfo.dart';
 import 'home.dart';
 import 'objects.dart';
 import 'newupload.dart';
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
         '/newupload': (context) => const NewUpload(),
         '/favorites': (context) => const Favorites(),
         '/ownuploads': (context) => const OwnUploads(),
-        '/phrases': (context) => const Phrases()
+        '/phrases': (context) => const Phrases(),
+        '/personalinfo' : (context) => const PersonalInfo()
       },
     );
   }
