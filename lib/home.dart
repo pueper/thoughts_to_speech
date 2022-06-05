@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               Container(
                 child: ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, '/objects');},
+                  onPressed: () {Navigator.pushNamed(context, '/categorylist');},
                   child: const Text("Objects"),
                 ),
               ),

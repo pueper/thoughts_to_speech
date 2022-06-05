@@ -11,6 +11,7 @@ import 'favorites.dart';
 import 'ownuploads.dart';
 import 'phrases.dart';
 import 'temp.dart';
+import 'categorylist.dart';
 
 
 void main() {
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
         '/favorites': (context) => const Favorites(),
         '/ownuploads': (context) => const OwnUploads(),
         '/phrases': (context) => const Phrases(),
-        '/personalinfo' : (context) => const PersonalInfo()
+        '/personalinfo' : (context) => const PersonalInfo(),
+        '/categorylist' : (context) => const Categorylist()
       },
     );
   }
