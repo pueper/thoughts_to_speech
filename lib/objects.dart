@@ -10,6 +10,18 @@ class Objects extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Objects'),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+            child: IconButton(
+              icon: const Icon(Icons.apps, size: 30.0),
+              onPressed: () {
+                Navigator.pushNamed(context, '/categorylist');
+                Navigator.pop(context);
+              },
+            ),
+          ),
+        ],
       ), 
         body: SingleChildScrollView(
           child: Column(

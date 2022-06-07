@@ -30,13 +30,19 @@ class Categorylist extends StatelessWidget {
                 Container(
                   child: ElevatedButton(
                     onPressed: () {Navigator.pushNamed(context, '/objects');},
-                    child: const Text("Objects"),
+                    child: Image.asset('assets/images/HelloThere.jpg',
+                      height: 100,
+                      width: 100,
+                      fit: BoxFit.fitWidth,),
                   ),
                 ),
                 Container(
                   child: ElevatedButton(
                     onPressed: () {Navigator.pushNamed(context, '/objects');},
-                    child: const Text("Objects"),
+                    child: Image.asset('assets/images/HelloThere.jpg',
+                      height: 100,
+                      width: 100,
+                      fit: BoxFit.fitWidth,),
                   ),
                 )
               ],
