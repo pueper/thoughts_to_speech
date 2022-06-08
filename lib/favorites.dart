@@ -6,9 +6,11 @@ class Favorites extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[100],
       appBar: AppBar(
         title: const Text('Favorites'),
       ),
+
       body: Center(
         child: ElevatedButton(
           onPressed: () {

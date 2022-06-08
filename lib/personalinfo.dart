@@ -11,18 +11,6 @@ class PersonalInfo extends StatelessWidget {
           centerTitle: true,
           elevation: 0.0,
           backgroundColor: Colors.blue[900],
-          actions: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
-              child: IconButton(
-                icon: const Icon(Icons.add_circle, size: 30.0),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/categorylist');
-                  Navigator.pop(context);
-                },
-              ),
-            ),
-          ],
         ),
         body: SingleChildScrollView(
             padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
