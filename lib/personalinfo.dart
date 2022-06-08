@@ -7,12 +7,24 @@ class PersonalInfo extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.blue[100],
         appBar: AppBar(
-          title: const Text('Patient Personal Information'),
+          title: const Text('Personal Information'),
           centerTitle: true,
           elevation: 0.0,
           backgroundColor: Colors.blue[900],
+          actions: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+              child: IconButton(
+                icon: const Icon(Icons.add_circle, size: 30.0),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/categorylist');
+                  Navigator.pop(context);
+                },
+              ),
+            ),
+          ],
         ),
-        body: Padding(
+        body: SingleChildScrollView(
             padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,6 +144,14 @@ class PersonalInfo extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         letterSpacing: 1.0,
                       )
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                    child: TextField(
+                      decoration: InputDecoration(labelText: 'Extra information'),
+                      keyboardType: TextInputType.multiline,
+                      maxLines: null, // <-- SEE HERE
+                    )
                   ),
                 ]
             )

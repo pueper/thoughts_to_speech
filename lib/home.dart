@@ -10,7 +10,16 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Homescreen'),
       ),
-      body: Column(
+
+      body:Container(
+          width: double.infinity,
+          decoration: const BoxDecoration(
+          image: DecorationImage(
+          image: AssetImage("assets/images/BackgroundImage.jpg"),
+          fit: BoxFit.cover),
+          ),
+
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Row(
@@ -61,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: ( ) {Navigator.pushNamed(context, '/personalinfo');},
                   child: const Icon(Icons.assignment_ind, color: Colors.black, size: 50),
-                  style: ElevatedButton.styleFrom(primary: Colors.green),
+                  style: ElevatedButton.styleFrom(primary: Colors.blue),
                   //child: const Text("Personal information")
                 )
               )
@@ -69,6 +78,7 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       )
+    )
     );
   }
 }
