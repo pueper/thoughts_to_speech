@@ -7,10 +7,20 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+        backgroundColor: Colors.blue[100],
       appBar: AppBar(
         title: const Text('Homescreen'),
       ),
-      body: Column(
+
+      body:Container(
+          width: double.infinity,
+          decoration: const BoxDecoration(
+          image: DecorationImage(
+          image: AssetImage("assets/images/BackgroundImage.jpg"),
+          fit: BoxFit.cover),
+          ),
+
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Row(
@@ -18,14 +28,20 @@ class HomeScreen extends StatelessWidget {
             children: [
               Container(
                 child: ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, '/objects');},
-                  child: const Text("Objects"),
+                  onPressed: () {Navigator.pushNamed(context, '/categorylist');},
+                  child: Image.asset('assets/images/Objects.jpg',
+                    height: 100,
+                    width: 100,
+                    fit: BoxFit.fitWidth,),
                 ),
               ),
               Container(
                 child: ElevatedButton(
                   onPressed: () {Navigator.pushNamed(context, '/phrases');},
-                  child: const Text("Phrases"),
+                  child: Image.asset('assets/images/Phrases.jpg',
+                    height: 100,
+                    width: 100,
+                    fit: BoxFit.fitWidth,),
                 ),
               )
             ],
@@ -36,13 +52,19 @@ class HomeScreen extends StatelessWidget {
               Container(
                 child: ElevatedButton(
                   onPressed: () {Navigator.pushNamed(context, '/favorites');},
-                  child: const Text("Favorites"),
+                  child: Image.asset('assets/images/Favorites.jpg',
+                    height: 100,
+                    width: 100,
+                    fit: BoxFit.fitWidth,),
                 ),
               ),
               Container(
                 child: ElevatedButton(
                   onPressed: () {Navigator.pushNamed(context, '/ownuploads');},
-                  child: const Text("Own Uploads"),
+                  child: Image.asset('assets/images/Own_Uploads.jpg',
+                    height: 100,
+                    width: 100,
+                    fit: BoxFit.fitWidth,),
                 ),
               )
             ],
@@ -53,21 +75,26 @@ class HomeScreen extends StatelessWidget {
               Container(
                 child: ElevatedButton(
                   onPressed: () {Navigator.pushNamed(context, '/newupload');},
-                  child: const Text("New Upload"),
+                  child: Image.asset('assets/images/New_Uploads.jpg',
+                    height: 100,
+                    width: 100,
+                    fit: BoxFit.fitWidth,),
                 ),
               ),
               Container(
                 child: ElevatedButton(
                   onPressed: ( ) {Navigator.pushNamed(context, '/personalinfo');},
-                  child: const Icon(Icons.assignment_ind, color: Colors.black, size: 50),
-                  style: ElevatedButton.styleFrom(primary: Colors.green),
-                  //child: const Text("Personal information")
+                  child: Image.asset('assets/images/Personal_info.jpg',
+                    height: 100,
+                    width: 100,
+                    fit: BoxFit.fitWidth,),
                 )
               )
             ],
           )
         ],
       )
+    )
     );
   }
 }
