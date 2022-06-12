@@ -10,7 +10,6 @@ import 'newupload.dart';
 import 'favorites.dart';
 import 'ownuploads.dart';
 import 'phrases.dart';
-import 'temp.dart';
 import 'categorylist.dart';
 
 
@@ -27,7 +26,6 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomeScreen(),
         '/objects': (context) => const Objects(),
-        '/temp': (context) => const Temp(),
         '/newupload': (context) => const NewUpload(),
         '/favorites': (context) => const Favorites(),
         '/ownuploads': (context) => const OwnUploads(),
