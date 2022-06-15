@@ -19,7 +19,7 @@ class Subject {
     final isPhrase = data['isPhrase'] as bool;
     final isPersonal = data['isPersonal'] as bool;
     final isFavorite = data['isFavorite'] as bool;
-    return Subject(name, image, category, isObject, isPhrase, isPersonal, isFavorite);
+    return Subject(name, image, sound, category, isObject, isPhrase, isPersonal, isFavorite);
   }
 
   Map<String, dynamic> toJson() {
