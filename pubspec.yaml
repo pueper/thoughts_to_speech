@@ -57,6 +57,12 @@ flutter:
   assets:
     - assets/images/
     - assets/data/
+    - assets/images/Entertainment
+    - assets/images/food
+    - assets/images/House
+    - assets/images/places
+    - assets/images/Travel
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

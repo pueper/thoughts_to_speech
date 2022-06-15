@@ -44,95 +44,133 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      child: ElevatedButton(
+                      child: TextButton(
                         onPressed: () {
                           navigateTo(context, '/categorylist');
                         },
-                        child: Image.asset(
-                          'assets/images/Objects.jpg',
-                          height: 100,
-                          width: 100,
-                          fit: BoxFit.fitWidth,
+                        child: Container(
+                          width: 120,
+                          height: 120,
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueGrey, width: 4),
+                              borderRadius: const BorderRadius.all(Radius.circular(10)),
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Objects.jpg'),
+                                  fit: BoxFit.cover
+                              )
+                          ),
                         ),
                       ),
                     ),
                     Container(
-                      child: ElevatedButton(
+                      child: TextButton(
                         onPressed: () {
                           navigateTo(context, '/phrases');
                         },
-                        child: Image.asset(
-                          'assets/images/Phrases.jpg',
-                          height: 100,
-                          width: 100,
-                          fit: BoxFit.fitWidth,
+                        child: Container(
+                          width: 120,
+                          height: 120,
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueGrey, width: 4),
+                              borderRadius: const BorderRadius.all(Radius.circular(10)),
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Phrases.jpg'),
+                                  fit: BoxFit.cover
+                              )
+                          ),
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      child: ElevatedButton(
+                      child: TextButton(
                         onPressed: () {
                           navigateTo(context, '/favorites');
                         },
-                        child: Image.asset(
-                          'assets/images/Favorites.jpg',
-                          height: 100,
-                          width: 100,
-                          fit: BoxFit.fitWidth,
+                        child: Container(
+                          width: 120,
+                          height: 120,
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueGrey, width: 4),
+                              borderRadius: const BorderRadius.all(Radius.circular(10)),
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Favorites.jpg'),
+                                  fit: BoxFit.cover
+                              )
+                          ),
                         ),
                       ),
                     ),
                     Container(
-                      child: ElevatedButton(
+                      child: TextButton(
                         onPressed: () {
                           navigateTo(context, '/ownuploads');
                         },
-                        child: Image.asset(
-                          'assets/images/Own_Uploads.jpg',
-                          height: 100,
-                          width: 100,
-                          fit: BoxFit.fitWidth,
+                        child: Container(
+                          width: 120,
+                          height: 120,
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueGrey, width: 4),
+                              borderRadius: const BorderRadius.all(Radius.circular(10)),
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Own_Uploads.jpg'),
+                                  fit: BoxFit.cover
+                              )
+                          ),
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      child: ElevatedButton(
+                      child: TextButton(
                         onPressed: () {
                           navigateTo(context, '/newupload');
                         },
-                        child: Image.asset(
-                          'assets/images/New_Uploads.jpg',
-                          height: 100,
-                          width: 100,
-                          fit: BoxFit.fitWidth,
+                        child: Container(
+                          width: 120,
+                          height: 120,
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueGrey, width: 4),
+                              borderRadius: const BorderRadius.all(Radius.circular(10)),
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/New_Uploads.jpg'),
+                                  fit: BoxFit.cover
+                              )
+                          ),
                         ),
                       ),
                     ),
                     Container(
-                        child: ElevatedButton(
-                      onPressed: () {
-                        navigateTo(context, '/personalinfo');
-                      },
-                      child: Image.asset(
-                        'assets/images/Personal_info.jpg',
-                        height: 100,
-                        width: 100,
-                        fit: BoxFit.fitWidth,
+                      child: TextButton(
+                        onPressed: () {
+                          navigateTo(context, '/personalinfo');
+                        },
+                        child: Container(
+                          width: 120,
+                          height: 120,
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blueGrey, width: 4),
+                              borderRadius: const BorderRadius.all(Radius.circular(10)),
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/images/Personal_info.jpg'),
+                                  fit: BoxFit.cover
+                              )),
+                        ),
                       ),
-                    ))
+                    ),
                   ],
                 )
               ],
-            )));
+            )
+        )
+    );
   }
 }
