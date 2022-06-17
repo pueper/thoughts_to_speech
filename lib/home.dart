@@ -27,10 +27,18 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.blue[100],
-        appBar: AppBar(
-          title: const Text('Homescreen'),
-        ),
+        extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        backgroundColor: const Color(0x64000000),
+        elevation: 0,
+        title: const Text("Thoughts To Speach"),
+        actions: const [
+          Icon(Icons.more_vert)
+        ],
+      ),
+
         body: Container(
+            padding: const EdgeInsets.only(top: 25.0),
             width: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(

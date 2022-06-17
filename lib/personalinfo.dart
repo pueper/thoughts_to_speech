@@ -5,15 +5,18 @@ class PersonalInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        extendBodyBehindAppBar: true,
         backgroundColor: Colors.blue[100],
         appBar: AppBar(
-          title: const Text('Personal Information'),
-          centerTitle: true,
-          elevation: 0.0,
-          backgroundColor: Colors.blue[900],
+          backgroundColor: const Color(0x64000000),
+          elevation: 0,
+          title: const Text("Personal Information"),
+          actions: const [
+            Icon(Icons.more_vert)
+          ],
         ),
         body: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(30.0, 100.0, 30.0, 0.0),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
