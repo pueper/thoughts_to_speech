@@ -13,9 +13,11 @@ class HomeScreen extends StatelessWidget {
       list = await retrieveAllPhrases();
       Navigator.pushNamed(context, '/phrases', arguments: list);
     } else if(location=='/favorites') {
-      Navigator.pushNamed(context, '/favorites');
+      list = await retrieveAllFavorites();
+      Navigator.pushNamed(context, '/favorites', arguments: list);
     } else if(location=='/ownuploads') {
-      Navigator.pushNamed(context, '/ownuploads');
+      list = await retrieveAllPersonal();
+      Navigator.pushNamed(context, '/ownuploads', arguments: list);
     } else if(location=='/newupload') {
       Navigator.pushNamed(context, '/newupload');
     } else if(location=='/personalinfo') {

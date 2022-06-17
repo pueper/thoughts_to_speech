@@ -9,14 +9,16 @@ class NewUpload extends StatelessWidget {
       appBar: AppBar(
         title: const Text('New Upload'),
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Go back!'),
-        ),
-      ),
+      body: Column(
+        children: [
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'Enter a search term',
+            ),
+          ),
+        ],
+      )
     );
   }
 }
