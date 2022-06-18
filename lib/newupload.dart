@@ -10,13 +10,19 @@ class NewUpload extends StatelessWidget {
         title: const Text('New Upload'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextField(
+          const Text("Name of object or phrase:", textScaleFactor: 1.5,),
+          const TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder(),
-              hintText: 'Enter a search term',
+              hintText: 'name...',
             ),
           ),
+          const Text("Associated image:", textScaleFactor: 1.5,),
+          ElevatedButton(onPressed: () {}, child: const Text("upload image")),
+          const Text("Associated sound:", textScaleFactor: 1.5,),
+          ElevatedButton(onPressed: () {}, child: const Text("upload sound")),
         ],
       )
     );

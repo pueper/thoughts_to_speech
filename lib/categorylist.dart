@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:thoughts_to_speech/storage_helper.dart';
 
-class Categorylist extends StatelessWidget {
+class Categorylist extends StatefulWidget {
   const Categorylist({Key? key}) : super(key: key);
 
   @override
+  State<Categorylist> createState() => _CategorylistState();
+}
+
+class _CategorylistState extends State<Categorylist> {
+  List<dynamic> data = [];
+
+  @override
   Widget build(BuildContext context) {
+
+    data = data.isNotEmpty ? data : ModalRoute.of(context)?.settings.arguments as List<String>;
+
     return Scaffold(
         backgroundColor: Colors.blue[100],
         appBar: AppBar(
@@ -22,34 +33,24 @@ class Categorylist extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  child: ElevatedButton(
-                    onPressed: () {Navigator.pushNamed(context, '/objects');},
-                    child: Image.asset('assets/images/HelloThere.jpg',
-                      height: 100,
-                      width: 100,
-                      fit: BoxFit.fitWidth,),
-                  ),
-                ),
-                Container(
-                  child: ElevatedButton(
-                    onPressed: () {Navigator.pushNamed(context, '/objects');},
-                    child: Image.asset('assets/images/HelloThere.jpg',
-                      height: 100,
-                      width: 100,
-                      fit: BoxFit.fitWidth,),
-                  ),
-                )
-              ],
-            ),
-          ],
-        )
+        body: ListView.builder(
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            itemCount: data.length,
+            itemBuilder: (context, index){
+              return ElevatedButton(
+                  onPressed: () async {
+                    List<dynamic> list = await retrieveObjectsFromCategory(data[index]);
+                    Navigator.pushNamed(context, '/objects', arguments: list);
+                  }, 
+                  child: Column(children: [
+                    Image.asset("assets/images/${data[index]}.jpg", width: 150,),
+                    Text(data[index]),
+                      ]
+                  )
+              );
+            }
+        ),
     );
   }
 }

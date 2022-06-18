@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:full_screen_image_null_safe/full_screen_image_null_safe.dart';
 import 'package:thoughts_to_speech/storage_helper.dart';
+import 'package:thoughts_to_speech/subjectWidget.dart';
 
 class OwnUploads extends StatefulWidget {
   const OwnUploads({Key? key}) : super(key: key);
@@ -41,25 +41,10 @@ class _OwnUploadsState extends State<OwnUploads> {
           shrinkWrap: true,
           itemCount: data.length,
           itemBuilder: (context, index){
-            return Card(
-              child: Column(
-
-                children: [
-                  FullScreenWidget(
-                    child: Container(
-                      child: Image.asset(data[index]["image"],
-                        height: 130,
-                        width: 130,
-                        fit: BoxFit.fitWidth,),
-                    ),
-                  ),
-                  Text(data[index]["name"]),
-                ],
-              ),
-            );
+            return SubjectWidget(data[index]["name"], data[index]["image"], data[index]["sound"]);
           }
         ),
-          ElevatedButton(onPressed: () async {setupWrite();}, child: Text("button"))
+          ElevatedButton(onPressed: () async {await setupWrite();}, child: Text("button"))
       ]
       )
     );
