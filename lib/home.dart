@@ -7,8 +7,8 @@ class HomeScreen extends StatelessWidget {
   void navigateTo(BuildContext context, String location) async {
     List<dynamic> list;
     if(location=='/categorylist') {
-      //TODO
-      Navigator.pushNamed(context, '/categorylist');
+      list = await retrieveAllCategories();
+      Navigator.pushNamed(context, '/categorylist', arguments: list);
     } else if(location=='/phrases') {
       list = await retrieveAllPhrases();
       Navigator.pushNamed(context, '/phrases', arguments: list);
