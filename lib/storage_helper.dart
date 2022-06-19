@@ -15,11 +15,11 @@ enum SubjectTypes {
   setupWrite() async {
     Subject subject1 = Subject("tv", "assets/images/Entertainment/tv.jpg", "assets/audio/test_audio.mp3", "entertainment", true, false, false, false);
     Subject subject2 = Subject("youtube", "assets/images/Entertainment/youtube.png", "assets/audio/test_audio.mp3", "entertainment", true, false, false, false);
-    Subject subject3 = Subject("pineapple", "assets/images/food/pineapple.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
-    Subject subject10 = Subject("apple", "assets/images/food/apple.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
+    Subject subject3 = Subject("pineapple", "assets/images/food/ananas.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
+    Subject subject10 = Subject("apple", "assets/images/food/appel.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
     Subject subject11 = Subject("banana", "assets/images/food/banana.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
     Subject subject12 = Subject("cocktail", "assets/images/food/cocktailglass.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
-    Subject subject13 = Subject("coffee", "assets/images/food/coffecup.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
+    Subject subject13 = Subject("coffee", "assets/images/food/coffeecup.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
     Subject subject14 = Subject("eat", "assets/images/food/eatingtimes.jpg", "assets/audio/test_audio.mp3", "food", false, true, false, false);
     Subject subject15 = Subject("egg", "assets/images/food/egg_broken.png", "assets/audio/test_audio.mp3", "food", true, false, false, false);
     Subject subject16 = Subject("fork", "assets/images/food/fork.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
@@ -28,7 +28,7 @@ enum SubjectTypes {
     Subject subject19 = Subject("kitchen utensils", "assets/images/food/kitchenutensils.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
     Subject subject20 = Subject("knife", "assets/images/food/knife.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
     Subject subject21 = Subject("milk", "assets/images/food/milk-300x300.png", "assets/audio/test_audio.mp3", "food", true, false, false, false);
-    Subject subject22 = Subject("mug", "assets/images/food/mug-300x300.png", "assets/audio/test_audio.mp3", "food", true, false, false, false);
+    Subject subject22 = Subject("mug", "assets/images/food/Mug-300x300.png", "assets/audio/test_audio.mp3", "food", true, false, false, false);
     Subject subject23 = Subject("plate", "assets/images/food/plate.jpg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
     Subject subject24 = Subject("spoon", "assets/images/food/spoon.jpeg", "assets/audio/test_audio.mp3", "food", true, false, false, false);
     Subject subject25 = Subject("rice", "assets/images/food/white_rice.jpg", "assets/audio/test_audio.mp3", "food", true, false, true, false);
@@ -40,7 +40,7 @@ enum SubjectTypes {
     Subject subject7 = Subject("luggage", "assets/images/Travel/luggage.jpg", "assets/audio/test_audio.mp3", "travel", true, false, false, false);
     Subject subject8 = Subject("travel", "assets/images/Travel/travel.jpg", "assets/audio/test_audio.mp3", "travel", false, true, false, false);
     List<dynamic> list = [subject1, subject2, subject3, subject4, subject5, subject6, subject7, subject8, subject9, subject10, subject11, subject12, subject13, subject14,
-                          subject15, subject16, subject17, subject18, subject19, subject20, subject21, subject22, subject23, subject24, subject25, subject26];
+                          subject15, subject16, subject17, subject18, subject19, subject20, subject21, subject22, subject23, subject24, subject25];
     await basicWrite(list);
   }
 

@@ -38,7 +38,7 @@ class _CategorylistState extends State<Categorylist> {
             shrinkWrap: true,
             itemCount: data.length,
             itemBuilder: (context, index){
-              return ElevatedButton(
+              return TextButton(
                   onPressed: () async {
                     List<dynamic> list = await retrieveObjectsFromCategory(data[index]);
                     Navigator.pushNamed(context, '/objects', arguments: list);
