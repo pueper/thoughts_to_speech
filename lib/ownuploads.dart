@@ -35,8 +35,7 @@ class _OwnUploadsState extends State<OwnUploads> {
           ),
         ],
       ),
-      body: Column(
-        children: [ListView.builder(
+      body: ListView.builder(
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
           itemCount: data.length,
@@ -44,9 +43,6 @@ class _OwnUploadsState extends State<OwnUploads> {
             return SubjectWidget(data[index]["name"], data[index]["image"], data[index]["sound"]);
           }
         ),
-          ElevatedButton(onPressed: () async {await setupWrite();}, child: Text("button"))
-      ]
-      )
     );
   }
 }
