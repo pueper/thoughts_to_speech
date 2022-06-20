@@ -33,14 +33,14 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0x64000000),
         elevation: 0,
-        title: const Text("Thoughts To Speach"),
+        title: const Text("Thoughts To Speech"),
         actions: const [
           Icon(Icons.more_vert)
         ],
       ),
 
         body: Container(
-            padding: const EdgeInsets.only(top: 25.0),
+            padding: const EdgeInsets.only(top: 35.0),
             width: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
